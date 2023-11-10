@@ -1,0 +1,32 @@
+*{z-index: 1;margin:0;padding:0;box-sizing:border-box;font-family:Ubuntu,sans-serif;font-size:large;-webkit-font-smoothing:antialiased ;}html{scroll-behavior:smooth}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#f7eee8}::-webkit-scrollbar-thumb{background:#e40751c4}::-webkit-scrollbar-thumb:hover{background:#ff075b}.App{padding:.5rem 3.5rem;overflow:hidden}a{width:fit-content}.mybtn-container{display:flex;justify-content:center;flex-direction:column}.mybtn-container a{position:relative;width:120px;height:50px;display:inline-block}.mybtn-container a::after,.mybtn-container a::before{content:'';position:absolute;inset:0;background:red;transition:.5s;border-radius:50px}.mybtn-container a span{border-radius:50px;cursor:pointer;position:absolute;top:0;left:0;width:100%;height:100%;display:inline;background:#0e1538;z-index:10;display:flex;justify-content:center;align-items:center;letter-spacing:1px;color:#fff;border:1px solid #040a29;overflow:hidden}.mybtn-container a:first-child::after,.mybtn-container a:first-child::before{background:linear-gradient(45deg,#ff075b,#0e1538,#0e1538,#ffd000)}.mybtn-container a:nth-child(2)::after,.mybtn-container a:nth-child(2)::before{background:linear-gradient(45deg,#ff075b,#0e1538,#0e1538,#0ff)}.mybtn-container a:hover::before{inset:-3px}.mybtn-container a:hover::after{inset:-3px;filter:blur(10px)}.mybtn-container a span::before{content:'';position:absolute;top:0;left:-50%;width:100%;height:100%;background:rgba(225,225,225,.075);transform:skew(25deg)}@media screen and (max-width:480px){.App{padding:.5rem 1rem}}
+@media (min-width: 1536px){
+    *{
+        max-width: 1280px;
+        margin: 0 auto;
+        z-index: 1;
+     /* :hover{
+      transform: none;
+      color: transparent;
+      -webkit-text-stroke: medium crimson;
+     }    */
+    }
+}
+
+/* *{
+
+  -webkit-text-stroke: none ;
+} */
+/* .s-services>:nth-child(2):hover{
+  transform: none;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #ff075b;
+} */
+::selection {
+    background:  #fd91a198;
+    /* color: teal; */
+  }
+  ::-moz-selection {
+    background:  #fd91a198;
+    /* color: teal; */
+  }
+  

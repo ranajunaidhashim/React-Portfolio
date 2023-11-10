@@ -1,0 +1,111 @@
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  /* height: 80vh; */
+  padding: 100px 50px 0;
+  background: #f7f7f7;
+}
+.portfolio span:first-of-type {
+  color: #ff075b;
+  font-size: 2rem;
+}
+.pclick {
+  /* color: orange; */
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 5px rgba(0, 114, 70, 0.3);
+}
+.pclick::before{
+  content: "⇓  ";
+}
+.portfolio-slider {
+  margin-top: 4rem;
+  width: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #a8033a !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ff075b;
+}
+.portfolio-slider .swiper-slide {
+  width: 20rem;
+}
+.portfolio img {
+  box-shadow: rgba(0, 0, 0, 0.2) -12px 4px 16px;
+  border-radius: 19px;
+}
+@media screen and (max-width: 480px) {
+  .portfolio {
+    height: 80vh;
+    padding: 0 5px;
+  }
+  .portfolio-slider {
+    margin-top: 4rem;
+    width: 100%;
+  }
+}
+.pimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.poverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  /* background: teal; */
+  /* backdrop-filter: blur(10px); */
+  background: linear-gradient(to top, #004442, #dddddd42);
+  /* background: linear-gradient(to top, teal, transparent);s */
+
+  /* transition: ease-in-out  0.5s; */
+  transition: ease-in-out 0.5s;
+  border-radius: 10px;
+}
+/* .pcontainer:hover {
+  backdrop-filter: blur(10px);
+} */
+.pcontainer:hover .poverlay {
+  backdrop-filter: blur(3px);
+  opacity: 1;
+}
+.ptext {
+  padding: 10px;
+  color: #fff;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.ptext > :nth-child(1) {
+  font-size: 20px;
+}
+.ptext > :nth-child(2) {
+  font-size: 15px;
+}
+.ptext > :nth-child(3) > button > * {
+  font-size: xx-large;
+}
+.ptext > :nth-child(3) > button {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  color: #ff075b;
+  /* background-color: #ff075b;
+    color: white; */
+  /* width: 80px; */
+}
