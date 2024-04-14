@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -75,4 +75,3 @@ Junaid Rana
 Design portfolio of Junaid Rana — a product designer working on web design, app and website development with a focus on motion, experience design, and accessibility.
 =======
 # React-Portfolio
->>>>>>> fddf984282402fe871a6c450ff61c5e14251237c
