@@ -14,15 +14,14 @@ const images = [
     link: "/",
   },
   {
+    img: "https://res.cloudinary.com/dsr70k3to/image/upload/v1712812649/Portfolio/Online_Alumni_Management_System_using_MERN_Stack_with_MySQL_Download_Source_Code_1_tnj1g7.jpg",
+    description: "Alumni Management System - A MERN stack web app for managing Alumni activities",
+    link: "https://youtu.be/i-0N-hek6lo",
+  },
+  {
     img: "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766928/Portfolio/smmarketing_gxkcwv.webp",
     description: "SM Marketing - Social Media services Platform web app.",
     link: "https://sm-marketing.vercel.app/",
-  },
-  {
-    img: "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766930/Portfolio/react-weather-mode_lgm0ox.webp",
-    description:
-      "Weather Mode - a simple real-time weather website to check any city live weather",
-    link: "https://weather-mode.vercel.app/",
   },
   {
     img: "https://res.cloudinary.com/dsr70k3to/image/upload/v1687764563/Portfolio/AshleyDelBello_clone_ekipgf.webp",
@@ -35,6 +34,12 @@ const images = [
     description:
       "Solar Energy Company- converted Figma design into a ReactJs website",
     link: "https://solar-innovative.netlify.app/",
+  },
+  {
+    img: "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766930/Portfolio/react-weather-mode_lgm0ox.webp",
+    description:
+      "Weather Mode - a simple real-time weather website to check any city live weather",
+    link: "https://weather-mode.vercel.app/",
   },
   {
     img: "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766927/Portfolio/essendant_yzkv7i.webp",
