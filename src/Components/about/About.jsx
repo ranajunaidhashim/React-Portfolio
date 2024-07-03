@@ -31,7 +31,8 @@ const About = () => {
 
         <Ripples during={1500} color={"rgba(255,255,255,0.5)"}>
           <a
-            href="https://drive.google.com/uc?export=download&id=1fng9xsTsiFiLMBUynx-t1AFgISqbDfLU"
+            href="https://drive.google.com/uc?export=download&id=19XHk7FKq_hLDL7sN0BQblK4rxyijGpaV"
+            // href="https://drive.google.com/uc?export=download&id=1fng9xsTsiFiLMBUynx-t1AFgISqbDfLU"
             // href="https://drive.google.com/uc?export=download&id=1_5C8QjYct06wt0j0fF9hYC7ky_0bKIaV"
             // href="https://drive.google.com/u/0/uc?id=1_5C8QjYct06wt0j0fF9hYC7ky_0bKIaV&export=download"
             className="a-abtn"
