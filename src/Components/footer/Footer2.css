@@ -1,0 +1,258 @@
+section {
+  /* background-color: #0e3836; */
+  /* background-color: #040041; */
+  background-color: #00201f;
+  /* background: #172940; */
+  padding-top: 60px;
+
+  /* border-top-style: ; */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-style: ridge;
+}
+.top {
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: center; */
+  margin: 20px;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 30px;
+}
+
+.top > svg {
+  /* width: 10%; */
+  width: 20%;
+}
+.top > img {
+  /* width: 10%; */
+  width: 10%;
+}
+.ftlink {
+  position: relative;
+}
+
+.ftlink:hover:before {
+  content: "⪢ ";
+  position: absolute;
+  left: -17px;
+  color: #ff075b;
+  font-size: 20px;
+}
+.ftlink {
+  text-decoration: none;
+  cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+  color: #a2b5cd;
+}
+.ftlink:hover {
+  color: orange;
+  transition: 0.3s ease-out;
+}
+.flinks a>* {
+height: 25px;
+width: 25px;
+/* -webkit-box-align: stretch;
+    alignment-baseline: text-before-edge; */
+    /* vertical-align: text-top; */
+    /* vertical-align: text-bottom; */
+    text-align: center;
+}
+
+.flinks a {
+  /* color: rgba(255, 217, 0, 0.712);
+  border: 1px solid gold; */
+  border: 1px solid orange;
+  color: goldenrod;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.3s ease-in-out;
+
+}
+.flinks a:hover {
+  transform: scale(1.1);
+  /* border-left-width: thick;
+  border-right-width: unset; */
+
+}
+.flinks a:nth-child(1){
+  border-left-width: thick;
+}
+.flinks a:nth-child(1):hover{
+  border-left-width: thin;
+  border-right-width:thick ;
+}
+
+.flinks a:nth-child(2){
+  border-top-width: thick;
+}
+.flinks a:nth-child(2):hover{
+  /* border-bottom-style: double; */
+  /* border-top-width: thin; */
+  border-top-style: double;
+  /* border-style: dotted */
+}
+
+.flinks a:nth-child(3){
+  border-right-width: thick;
+}
+.flinks a:nth-child(3):hover{
+  border-left-width: thick;
+  border-right-width: thin;
+}
+
+
+.footers {
+  margin: 0 !important;
+}
+.fpara {
+  color: gold;
+font-family: cursive;
+
+}
+.fmname{
+font-size: larger;
+/* font-family: cursive; */
+font-family: revert;
+text-decoration-thickness: from-font;
+text-transform: uppercase;
+}
+
+@media (width < 620px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer.bottom {
+    gap: 16px;
+    flex-direction: column-reverse;
+  }
+  .top > img {
+    /* width: 10%; */
+    width: 25%;
+  }
+}
+
+/* footer > img {
+    margin-top: 10px;
+  }
+   */
+@media (width >= 620px) {
+  footer {
+    /* margin: 0 30px; */
+    margin: 0 auto;
+    /* max-width: 600px; */
+    padding: 0;
+  }
+}
+
+footer {
+  color: #a2b5cd;
+}
+
+/* footer.top {
+    border-bottom: 2px solid orange;
+    padding-bottom: 20px;
+  } */
+
+footer.bottom {
+  padding: 20px 0;
+  justify-content: space-around;
+}
+
+footer.top .links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.links > div {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+  /* margin-bottom: 30px; */
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f7f7f7;
+}
+
+.legal {
+  font-size: 12px;
+}
+
+.legal > a {
+  margin: 0 4px;
+}
+
+.legal > span {
+  margin-right: 10px;
+}
+
+footer.bottom .links {
+  display: flex;
+  gap: 18px;
+}
+
+footer.bottom .links > a {
+  font-size: 24px;
+}
+
+@media (width < 420px) {
+  .fpara {
+    font-size: x-large;
+    
+  }
+  section {
+    /* height: 90vh; */
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+  .top > img {
+    align-self: flex-start;
+  }
+  .top {
+    margin: 10px;
+  }
+  footer {
+    text-align: center;
+    align-items: center;
+  }
+  footer.top .links {
+    gap: 0;
+  }
+
+  footer.top .links {
+    grid-template-columns: 1fr;
+  }
+
+  .flinks a {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  footer.bottom {
+    align-items: center;
+  }
+
+  .legal > span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+}
