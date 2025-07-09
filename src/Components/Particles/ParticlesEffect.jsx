@@ -33,7 +33,10 @@ function ParticlesEffect() {
         this.size = Math.random() * 2 + 0.1;
         this.speedX = Math.random() * 2 - 1;
         this.speedY = Math.random() * 2 - 1;
+        // for rainbow colors
         this.color = `hsl(${Math.floor(Math.random() * 361)}, 100%, 50%)`;
+        // for one color at one time
+        // this.color = `hsl(${hue}, 100%, 50%)`;
       }
 
       update() {
