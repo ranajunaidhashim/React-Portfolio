@@ -47,7 +47,7 @@ const Contact = () => {
       <div className="c-contactt">
         <span>Contact me</span>
         <span>
-          Let's talk about your website or project. Send a message and get in touch.
+          Let's talk about your project. Send a message and get in touch.
         </span>
       </div>
 
@@ -99,12 +99,22 @@ const Contact = () => {
         <div className="c-left">
           <span>My Phone</span>
           <div className="c-phone">
-            <ImPhone className="c-icon" />
-            <a href="tel:+923007378823">+923007378823</a>
+            <motion.a
+              className="c-icon"
+              href="tel:+923007378823"
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
+              <ImPhone />
+            </motion.a>
             <motion.a
               title="Contact via Whatsapp"
               className="whatsapp"
-              target="_blank"
               href="https://api.whatsapp.com/send?phone=+923007378823"
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -120,9 +130,21 @@ const Contact = () => {
 
           <span>Email Address</span>
           <div className="c-phone">
-            <MdEmail className="c-icon" />
-            <a href="mailto:ranajunaidhashim6@gmail.com">ranajunaidhashim6@gmail.com</a>
+            <motion.a
+              className="c-icon"
+              href="mailto:ranajunaidhashim6@gmail.com"
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
+              <MdEmail />
+            </motion.a>
           </div>
+
           <motion.img
             alt="HELLO"
             title="🤝"

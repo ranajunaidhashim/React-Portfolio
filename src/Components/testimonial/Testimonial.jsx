@@ -11,30 +11,32 @@ import { motion } from "framer-motion";
 const Testimonial = () => {
   const testimonials = [
     {
-      img: "https://avatar.iran.liara.run/public/90",
       name: "Alice Thompson",
       role: "Product Manager",
       review: "“Outstanding attention to detail and timely delivery—truly exceptional work.”",
     },
     {
-      img: "https://avatar.iran.liara.run/public/21",
-      name: "Bob Martinez",
+      name: "David Kim",
       role: "Software Engineer",
       review: "“Innovative and reliable—his technical skills transformed our project.”",
     },
     {
-      img: "https://avatar.iran.liara.run/public/62",
       name: "Clara Lee",
       role: "UX Designer",
       review: "“Creative solutions and seamless collaboration throughout the design process.”",
     },
     {
-      img: "https://avatar.iran.liara.run/public/13",
-      name: "David Kim",
+      name: "Bob Martinez",
       role: "Marketing Strategist",
       review: "“Professional, responsive, and delivered exactly what we needed for our campaign.”",
     },
   ];
+
+  // helper to build a UI-Avatars URL
+  const avatarUrl = (name) => {
+    const encoded = encodeURIComponent(name);
+    return `https://ui-avatars.com/api/?name=${encoded}&background=random`;
+  };
 
   return (
     <div className="t-wrapper" id="testimonial">
@@ -47,7 +49,7 @@ const Testimonial = () => {
         modules={[Pagination, Autoplay]}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        autoplay={true}
+        autoplay={{ delay: 3000 }}
         className="t-slider"
       >
         {testimonials.map((item, idx) => (
@@ -58,7 +60,7 @@ const Testimonial = () => {
               whileInView={{ opacity: 1 }}
               className="testimonial"
             >
-              <img src={item.img} alt={item.name} />
+              <img src={avatarUrl(item.name)} alt={item.name} />
               <span className="t-name">{item.name}</span>
               <span className="t-role">{item.role}</span>
               <span className="t-desc">{item.review}</span>

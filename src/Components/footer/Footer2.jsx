@@ -91,12 +91,9 @@ const Footer2 = () => {
         <footer className="bottom">
           <div className="legal">
             <span>&copy; 2022 | All rights reserved </span>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a> License </a>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            {/* <a> License </a>
             <a> Terms </a>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a> Privacy </a>
+            <a> Privacy </a> */}
           </div>
           <div className="flinks">
             <a 

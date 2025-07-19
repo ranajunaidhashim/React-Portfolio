@@ -278,7 +278,7 @@ a {
 
 @media (min-width: 1536px) {
   * {
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
     z-index: 1;
     /* :hover{
