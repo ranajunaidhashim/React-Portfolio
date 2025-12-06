@@ -1,176 +1,199 @@
-.n-name,
-.n-name > span,
-.nn-name,
-.nn-name > span {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-.n-button,
-.n-left,
-.n-list > ul,
-.n-right,
-.n-wrapper {
-  display: flex;
-}
-#navbar,
-.navBtn,
-.navPhone {
+/* Header */
+.header {
   position: fixed;
-}
-.n-wrapper {
-  height: auto;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
   top: 0;
-  padding-top: 10px;
-  z-index: 999;
-  padding-left: 50px;
-  padding-right: 50px;
-  -webkit-backdrop-filter: blur(7px) brightness(90%);
-  backdrop-filter: blur(7px) brightness(90%);
-  background-color: rgba(255, 255, 255, 0.4);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
-#navbar {
-  transition: top 0.3s;
+
+.header-scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 2rem;
 }
-.n-left {
-  flex: 1;
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
-  justify-content: left;
-  gap: 2rem;
+  justify-content: space-between;
 }
-.nn-name {
-  color: #fff;
-  transition: 1s;
-}
-.n-name > span,
-.nn-name > span {
-  color: #ff075b !important;
-}
-.n-right {
-  flex: 1;
+
+/* Logo */
+.logo {
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  gap: 2px;
+}
+
+.logo-bracket {
+  color: #ff075b;
   font-weight: 400;
 }
-.n-list {
-  flex: 10;
+
+.logo-text {
+  color: #0f172a;
+  letter-spacing: -0.5px;
 }
-.n-list > ul {
-  gap: 2rem;
-  margin-right: 4rem;
-}
-.n-list > ul > li a {
-  font-size: 1.1rem;
-}
-.n-list > ul :hover {
+
+.logo-slash {
   color: #ff075b;
-  cursor: pointer;
+  font-weight: 400;
 }
-.n-button {
-  flex: 2;
-  align-items: center;
-  justify-content: center;
-}
-.n-list > ul > li > a.active {
-  color: #000;
-  text-decoration: none;
-}
-.n-list > ul > li > a.active:hover {
-  color: #ff075b;
-}
-.n-list > ul > li > a::before {
-  content: "";
-  width: 0;
-  display: block;
-  height: 3px;
-  background-color: #ff075a75;
-  transition: width 0.2s ease-in-out;
-}
-.n-list > ul > li > a.active::before,
-.n-list > ul > li > a:hover::before {
-  width: 50%;
-}
-.navBtn {
-  width: 40px;
-  /* height: 40px; */
-  border: none;
-  color: #dd054e;
-  background-color: transparent;
-  font-size: 1.4rem;
-  z-index: 150;
-  right: 2rem;
-  display: none;
-  transform: scale(1.3);
-}
-.navBtn:hover {
-  color: rgb(82, 75, 63);
-}
-.navPhone {
-  transition: 0.3s;
-  transform: translateY(-200%);
-  width: 100%;
-  height: 100vh;
-  background-color: #004b4b;
-  color: orange;
-  padding: 5vmax;
-  top: 0;
-  z-index: 100;
+
+/* Desktop Navigation */
+.nav-desktop {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  letter-spacing: 1px;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
-}
-.navPhoneComes {
-  transform: translateY(0);
-}
-.n-listPhone > ul {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-right: 2rem;
-  justify-content: center;
-}
-.n-listPhone > ul > li > * {
-  font-size: x-large !important;
-}
-.n-listPhone > ul :hover {
-  color: orange;
-  cursor: pointer;
-}
-.n-listPhone > ul > li > a.active {
-  color: orange;
+  color: #475569;
   text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
 }
+
+.nav-link:hover {
+  color: #ff075b;
+  background: rgba(255, 7, 91, 0.05);
+}
+
+.nav-link-active {
+  color: #ff075b;
+  background: rgba(255, 7, 91, 0.1);
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hire-btn {
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #ff075b 0%, #ff4d8d 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 7, 91, 0.3);
+}
+
+.hire-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 7, 91, 0.4);
+}
+
+/* Menu Toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #0f172a;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background: rgba(255, 7, 91, 0.1);
+  color: #ff075b;
+}
+
+/* Mobile Navigation */
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.nav-link-mobile {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.nav-link-mobile:hover {
+  color: #ff075b;
+  background: rgba(255, 7, 91, 0.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+
+  .hire-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0.75rem 1rem;
+  }
+
+  .header-scrolled {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
-  .n-list {
-    display: none;
+  .header {
+    padding: 0.5rem 0.75rem;
   }
-  .n-wrapper {
-    -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
-    background: 0 0;
-    height: auto;
-  }
-  .navBtn {
-    display: block;
-  }
-}
-@media screen and (max-width: 786px) {
-  .n-list {
-    display: none;
-  }
-  .n-wrapper {
-    -webkit-backdrop-filter: blur(7px) brightness(90%);
-    backdrop-filter: blur(7px) brightness(90%);
-    background: 0 0;
-    height: auto;
-  }
-  .navBtn {
-    display: block;
+
+  .nav-link-mobile {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
   }
 }

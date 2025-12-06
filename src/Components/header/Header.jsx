@@ -1,155 +1,131 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
-import { Link, animateScroll as scroll } from "react-scroll";
-// import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Fade as Hamburger } from "hamburger-react";
+import { Link } from "react-scroll";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 
-const Header = ({ menuOpen, setMenuOpen }) => {
-  const handleClick = () => {
-    scroll.scrollToTop();
-  };
+const Header = () => {
+  const [menuOpened, setMenuOpened] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  return (
-    <nav>
-      <NavContent
-        handleClick={handleClick}
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
-      />
-    </nav>
-  );
-};
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-70px";
-  }
-  prevScrollpos = currentScrollPos;
-};
-
-export const HeaderPhone = ({ menuOpen, setMenuOpen }) => {
-  const handleClick = () => {
-    scroll.scrollToTop();
-  };
+  const navLinks = [
+    { to: "Intro", label: "Home" },
+    { to: "about", label: "About" },
+    { to: "experience", label: "Experience" },
+    { to: "services", label: "Services" },
+    { to: "portfolio", label: "Projects" },
+    { to: "testimonials", label: "Testimonials" },
+    { to: "contact", label: "Contact" },
+  ];
 
   return (
-    <div className={`navPhone ${menuOpen ? "navPhoneComes" : ""}`}>
-      <div className="n-listPhone">
-        <ul style={{ listStyleType: "none" }}>
-          <li>
-            <Link
-              onClick={() => {
-                setMenuOpen(false);
-                handleClick();
-              }}
-              to="home"
-              activeClass="active"
-              spy={true}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              activeClass="active"
-              to="services"
-              spy={true}
-            >
-              Serivces
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              activeClass="active"
-              to="portfolio"
-              spy={true}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              activeClass="active"
-              to="testimonial"
-              spy={true}
-            >
-              Testimonial
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              to="contact"
-              activeClass="active"
-              spy={true}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+    <header className={`header ${scrolled ? "header-scrolled" : ""}`}>
+      <div className="header-container">
+        <motion.a
+          href="/"
+          className="logo"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="logo-bracket">&lt;</span>
+          <span className="logo-text">Junaid</span>
+          <span className="logo-slash">/</span>
+          <span className="logo-bracket">&gt;</span>
+        </motion.a>
 
-const NavContent = ({ menuOpen, setMenuOpen, handleClick }) => (
-  <>
-    <div className="n-wrapper" id="navbar">
-      <div className="n-left">
-        <div className={menuOpen ? "nn-name" : "n-name"}>
-          RA<span>NA</span>
-        </div>
-      </div>
-
-      <div className="n-right">
-        <button className="navBtn" onClick={() => setMenuOpen(!menuOpen)}>
-        <Hamburger toggled={menuOpen} toggle={setMenuOpen}  size={20} color="#ff075b" />
-          {/* {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />} */}
-        </button>
-        <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
-            <li>
+        <nav className="nav-desktop">
+          {navLinks.map((link, index) => (
+            <motion.div
+              key={link.to}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
               <Link
-                activeClass="active"
-                to="home"
-                onClick={handleClick}
+                to={link.to}
                 spy={true}
+                smooth={true}
+                offset={-80}
+                duration={0}
+                className="nav-link"
+                activeClass="nav-link-active"
               >
-                Home
+                {link.label}
               </Link>
-            </li>
-            <li>
-              <Link activeClass="active" to="services" spy={true}>
-                Serivces
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" to="portfolio" spy={true}>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" to="testimonial" spy={true}>
-                Testimonial
-              </Link>
-            </li>
-            <li>
-              <Link to="contact" activeClass="active" spy={true}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+            </motion.div>
+          ))}
+        </nav>
+
+        <motion.div
+          className="header-actions"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={0}
+            className="hire-btn"
+          >
+            Hire Me
+          </Link>
+
+          <button
+            className="menu-toggle"
+            onClick={() => setMenuOpened(!menuOpened)}
+            aria-label="Toggle menu"
+          >
+            {menuOpened ? <HiX /> : <HiMenuAlt3 />}
+          </button>
+        </motion.div>
       </div>
-    </div>
-  </>
-);
+
+      <AnimatePresence>
+        {menuOpened && (
+          <motion.nav
+            className="nav-mobile"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {navLinks.map((link, index) => (
+              <motion.div
+                key={link.to}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+              >
+                <Link
+                  to={link.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={0}
+                  className="nav-link-mobile"
+                  onClick={() => setMenuOpened(false)}
+                >
+                  {link.label}
+                </Link>
+              </motion.div>
+            ))}
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </header>
+  );
+};
 
 export default Header;

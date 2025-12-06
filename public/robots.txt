@@ -1,4 +1,26 @@
 # https://www.robotstxt.org/robotstxt.html
+# Junaid Rana Portfolio - robots.txt
+
+# Allow all crawlers
 User-agent: *
 Allow: /
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Disallow unnecessary paths
+Disallow: /static/js/*.map
+Disallow: /static/css/*.map
+
+# Sitemap location
 Sitemap: https://junaidrana.vercel.app/sitemap.xml
+
+# Host
+Host: https://junaidrana.vercel.app

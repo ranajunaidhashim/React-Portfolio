@@ -1,86 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Favicon & App Icons -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- <meta name="theme-color" content="#0e3836" /> -->
-  <meta name="theme-color" content="#FF075B" />
-  <meta name="Keywords"
-    content="Web developer, Application developer,Front-end developer,Portfolio,rana junaid hashim, ranajunaidhashim6@gmail.com , JavaScript framework, React, CSS, Reactjs, Single-page application, JavaScript, Web development" />
-<!-- google ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2873282382829225"
-crossorigin="anonymous"></script>
-  <!-- my custom seo-->
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon.ico" />
+  
+  <!-- Theme Colors -->
+  <meta name="theme-color" content="#ff4b88" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ff4b88" media="(prefers-color-scheme: light)" />
+  <meta name="msapplication-TileColor" content="#ff4b88" />
+  <meta name="msapplication-navbutton-color" content="#ff4b88" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://res.cloudinary.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Junaid Rana | Full-Stack Developer & Software Engineer | React, Angular, AWS</title>
+  <meta name="title" content="Junaid Rana | Full-Stack Developer & Software Engineer | React, Angular, AWS" />
+  <meta name="description" content="Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS. Building scalable web applications, IoT solutions, and enterprise software. Available for freelance and full-time opportunities." />
+  <meta name="author" content="Rana Junaid Hashim" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="bingbot" content="index, follow" />
+  <link rel="canonical" href="https://junaidrana.vercel.app" />
+  
+  <!-- Extended Keywords -->
+  <meta name="keywords" content="Junaid Rana, Rana Junaid Hashim, Full Stack Developer, Software Engineer, React Developer, Angular Developer, Node.js Developer, AWS Developer, Web Developer, Frontend Developer, Backend Developer, JavaScript Expert, TypeScript, Portfolio, Hire Developer, Freelance Developer, MERN Stack, IoT Developer, UI/UX Designer, Pakistan Developer" />
+  
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="PK" />
+  <meta name="geo.placename" content="Pakistan" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+  
+  <!-- Site Verification -->
   <meta name="msvalidate.01" content="46AF69696B848076E007963F909DEF5A" />
   <meta name="google-site-verification" content="NcMF0pW2bvb9LIGvnx-CCbPe7Vrs4PimK7kxvFPGo_Y" />
-  <!-- Google tag (gtag.js) -->
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://junaidrana.vercel.app/" />
+  <meta property="og:title" content="Junaid Rana | Full-Stack Developer & Software Engineer" />
+  <meta property="og:description" content="Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
+  <meta property="og:image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Junaid Rana - Full Stack Developer Portfolio" />
+  <meta property="og:site_name" content="Junaid Rana Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://junaidrana.vercel.app/" />
+  <meta name="twitter:title" content="Junaid Rana | Full-Stack Developer & Software Engineer" />
+  <meta name="twitter:description" content="Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
+  <meta name="twitter:image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp" />
+  <meta name="twitter:image:alt" content="Junaid Rana - Full Stack Developer Portfolio" />
+  <meta name="twitter:creator" content="@junaidrana" />
+  <meta name="twitter:site" content="@junaidrana" />
+  
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Junaid Rana | Full-Stack Developer & Software Engineer" />
+  <meta itemprop="description" content="Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
+  <meta itemprop="image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp" />
+  
+  <!-- Structured Data - Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rana Junaid Hashim",
+    "alternateName": "Junaid Rana",
+    "url": "https://junaidrana.vercel.app",
+    "image": "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp",
+    "jobTitle": "Full-Stack Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance / Available for hire"
+    },
+    "description": "Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS cloud services.",
+    "email": "ranajunaidhashim6@gmail.com",
+    "sameAs": [
+      "https://github.com/ranajunaidhashim",
+      "https://linkedin.com/in/ranajunaidhashim",
+      "https://facebook.com/ranajunaidhashim"
+    ],
+    "knowsAbout": [
+      "React.js", "Angular", "Node.js", "AWS", "JavaScript", "TypeScript", 
+      "Full-Stack Development", "Web Development", "Software Engineering",
+      "REST APIs", "GraphQL", "MongoDB", "MySQL", "PostgreSQL"
+    ]
+  }
+  </script>
+  
+  <!-- Structured Data - Website Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Junaid Rana Portfolio",
+    "url": "https://junaidrana.vercel.app",
+    "description": "Portfolio website of Junaid Rana - Full-Stack Software Engineer",
+    "author": {
+      "@type": "Person",
+      "name": "Rana Junaid Hashim"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://junaidrana.vercel.app/#portfolio?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <!-- Structured Data - BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://junaidrana.vercel.app" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://junaidrana.vercel.app/#about" },
+      { "@type": "ListItem", "position": 3, "name": "Experience", "item": "https://junaidrana.vercel.app/#experience" },
+      { "@type": "ListItem", "position": 4, "name": "Services", "item": "https://junaidrana.vercel.app/#services" },
+      { "@type": "ListItem", "position": 5, "name": "Portfolio", "item": "https://junaidrana.vercel.app/#portfolio" },
+      { "@type": "ListItem", "position": 6, "name": "Contact", "item": "https://junaidrana.vercel.app/#contact" }
+    ]
+  }
+  </script>
+
+  <!-- Manifest & Sitemap -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  
+  <!-- Fonts with display swap for performance -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  
+  <!-- Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" /> -->
+  
+  <!-- Google Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2873282382829225" crossorigin="anonymous"></script>
+  
+  <!-- Google Analytics (uncomment in production) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HREKCZ5LW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-5HREKCZ5LW');
   </script> -->
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Web Design, App and Website Development | Junaid Rana">
-  <meta name="author" content="Junaid Rana">
-  <meta name="description"
-    content="Portfolio of Junaid Rana — a product designer working on web design, app and website development with a focus on motion, experience design, and accessibility.">
-  <!--  Helping everyone launch ideas by creating an online presence -->
-
-  <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Web Design, App and Website Development | Junaid Rana">
-<meta itemprop="description" content="Design portfolio of Junaid Rana — a product designer working on web design, app and website development with a focus on motion, experience design, and accessibility.">
-<meta itemprop="image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://junaidrana.vercel.app">
-  <meta property="og:title" content="Web Design, App and Website Development | Junaid Rana">
-  <meta property="og:description"
-    content="Design portfolio of Junaid Rana — a product designer working on web design, app and website development with a focus on motion, experience design, and accessibility.">
-  <meta property="og:image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://junaidrana.vercel.app">
-  <meta property="twitter:title" content="Web Design, App and Website Development | Junaid Rana">
-  <meta property="twitter:description"
-    content="Design portfolio of Junaid Rana — a product designer working on web design, app and website development with a focus on motion, experience design, and accessibility.">
-  <meta property="twitter:image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp">
-  <!-- end seo -->
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
-    rel="stylesheet">
-  <!-- CSS only -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-  <title>Web Design, App and Website Development | Junaid Rana</title>
-  <!-- sitemap -->
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
- 
 </head>
 
 <body>
-  <!-- JavaScript Bundle with Popper -->
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
-  <noscript>Web Design, App and Website Development | Rana Junaid Hashim. Design portfolio of Junaid Rana — a product designer
-    working on web design, app and website development with a focus on motion, experience design, and accessibility.
-    Helping everyone launch ideas by creating an online presence.</noscript>
-  <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+  <!-- No JavaScript Fallback -->
+  <noscript>
+    <div style="padding: 20px; text-align: center; background: #0a0a0f; color: #fff; min-height: 100vh;">
+      <h1>Junaid Rana - Full-Stack Software Engineer</h1>
+      <p>Experienced Full-Stack Developer specializing in React, Angular, Node.js, and AWS.</p>
+      <p>Please enable JavaScript to view the full interactive portfolio experience.</p>
+      <p>Contact: <a href="mailto:ranajunaidhashim6@gmail.com" style="color: #FF075B;">ranajunaidhashim6@gmail.com</a></p>
+      <p>
+        <a href="https://github.com/ranajunaidhashim" style="color: #FF075B;">GitHub</a> | 
+        <a href="https://linkedin.com/in/ranajunaidhashim" style="color: #FF075B;">LinkedIn</a>
+      </p>
+    </div>
+  </noscript>
+  
   <div id="root"></div>
-
 </body>
 
 </html>

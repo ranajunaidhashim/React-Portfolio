@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Junaid Rana",
+  "name": "Junaid Rana | Full-Stack Developer Portfolio",
+  "description": "Portfolio of Junaid Rana - Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,18 +11,25 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
-  "display_override": ["window-control-overlay", "minimal-ui"],
-
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "theme_color": "#ff6b9d",
+  "background_color": "#ff6b9d",
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "prefer_related_applications": false
 }
