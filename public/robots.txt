@@ -1,26 +1,80 @@
 # https://www.robotstxt.org/robotstxt.html
 # Junaid Rana Portfolio - robots.txt
+# Full-Stack Software Engineer Portfolio Website
 
-# Allow all crawlers
-User-agent: *
-Allow: /
-
-# Google specific
+# Allow all major search engine crawlers
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
 
-# Bing specific
+User-agent: Googlebot-Image
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# Disallow unnecessary paths
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandexbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Allow all other crawlers
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+# Disallow development and build files
 Disallow: /static/js/*.map
 Disallow: /static/css/*.map
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Allow important files
+Allow: /manifest.json
+Allow: /sitemap.xml
+Allow: /robots.txt
 
 # Sitemap location
 Sitemap: https://junaidrana.vercel.app/sitemap.xml
 
-# Host
+# Host directive
 Host: https://junaidrana.vercel.app
+
+# Clean URLs for SPA sections
+# All hash-based routes are crawlable
+# Home: https://junaidrana.vercel.app/
+# About: https://junaidrana.vercel.app/#about
+# Experience: https://junaidrana.vercel.app/#experience
+# Services: https://junaidrana.vercel.app/#services
+# Portfolio: https://junaidrana.vercel.app/#portfolio
+# Testimonials: https://junaidrana.vercel.app/#testimonials
+# Contact: https://junaidrana.vercel.app/#contact

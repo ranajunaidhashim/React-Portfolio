@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#" itemscope itemtype="https://schema.org/WebPage">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- Prerender & Prefetch for SPA Crawling -->
+  <meta name="fragment" content="!" />
   
   <!-- Favicon & App Icons -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -16,128 +20,354 @@
   <meta name="theme-color" content="#ff4b88" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#ff4b88" media="(prefers-color-scheme: light)" />
   <meta name="msapplication-TileColor" content="#ff4b88" />
+  <meta name="msapplication-TileImage" content="%PUBLIC_URL%/logo192.png" />
   <meta name="msapplication-navbutton-color" content="#ff4b88" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Junaid Rana" />
+  <meta name="application-name" content="Junaid Rana Portfolio" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   
   <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://res.cloudinary.com" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://ui-avatars.com" />
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
   
   <!-- Primary Meta Tags -->
-  <title>Junaid Rana | Full-Stack Developer & Software Engineer | React, Angular, AWS</title>
-  <meta name="title" content="Junaid Rana | Full-Stack Developer & Software Engineer | React, Angular, AWS" />
-  <meta name="description" content="Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS. Building scalable web applications, IoT solutions, and enterprise software. Available for freelance and full-time opportunities." />
+  <title>Junaid Rana | Full-Stack Developer & Software Engineer | React, Angular, Node.js, AWS Expert</title>
+  <meta name="title" content="Junaid Rana | Full-Stack Developer & Software Engineer | React, Angular, Node.js, AWS Expert" />
+  <meta name="description" content="Hire Junaid Rana - Experienced Full-Stack Software Engineer with 3+ years expertise in React.js, Angular, Node.js, AWS Lambda, and cloud architecture. Building scalable web applications, IoT solutions, and enterprise software. Available for freelance projects and full-time opportunities in Pakistan." />
   <meta name="author" content="Rana Junaid Hashim" />
+  <meta name="creator" content="Rana Junaid Hashim" />
+  <meta name="publisher" content="Rana Junaid Hashim" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="googlebot" content="index, follow" />
-  <meta name="bingbot" content="index, follow" />
-  <link rel="canonical" href="https://junaidrana.vercel.app" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="slurp" content="index, follow" />
+  <meta name="duckduckbot" content="index, follow" />
+  <link rel="canonical" href="https://junaidrana.vercel.app/" />
   
-  <!-- Extended Keywords -->
-  <meta name="keywords" content="Junaid Rana, Rana Junaid Hashim, Full Stack Developer, Software Engineer, React Developer, Angular Developer, Node.js Developer, AWS Developer, Web Developer, Frontend Developer, Backend Developer, JavaScript Expert, TypeScript, Portfolio, Hire Developer, Freelance Developer, MERN Stack, IoT Developer, UI/UX Designer, Pakistan Developer" />
+  <!-- Extended Keywords & Topic Classification -->
+  <meta name="keywords" content="Junaid Rana, Rana Junaid Hashim, Full Stack Developer, Software Engineer, React Developer, Angular Developer, Node.js Developer, AWS Developer, Web Developer, Frontend Developer, Backend Developer, JavaScript Expert, TypeScript, Portfolio, Hire Developer, Freelance Developer, MERN Stack, IoT Developer, UI/UX Designer, Pakistan Developer, Multan Developer, Cloud Architect, Web Application Development, Enterprise Software, GraphQL Developer, MongoDB, MySQL, PostgreSQL, DynamoDB, Serverless Architecture, AWS Lambda, CloudFormation, CI/CD Pipeline" />
+  <meta name="subject" content="Full-Stack Software Engineering Portfolio" />
+  <meta name="topic" content="Web Development, Software Engineering, Cloud Computing" />
+  <meta name="classification" content="Portfolio Website" />
+  <meta name="category" content="Technology, Software Development" />
+  <meta name="coverage" content="Worldwide" />
+  <meta name="distribution" content="Global" />
+  <meta name="rating" content="General" />
+  <meta name="target" content="all" />
+  <meta name="HandheldFriendly" content="True" />
   
   <!-- Geo Tags -->
-  <meta name="geo.region" content="PK" />
-  <meta name="geo.placename" content="Pakistan" />
+  <meta name="geo.region" content="PK-PB" />
+  <meta name="geo.placename" content="Multan, Punjab, Pakistan" />
+  <meta name="geo.position" content="30.1956;71.4753" />
+  <meta name="ICBM" content="30.1956, 71.4753" />
   <meta name="language" content="English" />
-  <meta name="revisit-after" content="7 days" />
+  <meta name="revisit-after" content="3 days" />
+  <meta name="expires" content="never" />
+  <meta name="pragma" content="no-cache" />
   
   <!-- Site Verification -->
   <meta name="msvalidate.01" content="46AF69696B848076E007963F909DEF5A" />
   <meta name="google-site-verification" content="NcMF0pW2bvb9LIGvnx-CCbPe7Vrs4PimK7kxvFPGo_Y" />
+  <meta name="yandex-verification" content="" />
+  <meta name="p:domain_verify" content="" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://junaidrana.vercel.app/" />
-  <meta property="og:title" content="Junaid Rana | Full-Stack Developer & Software Engineer" />
-  <meta property="og:description" content="Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
+  <meta property="og:title" content="Junaid Rana | Full-Stack Developer & Software Engineer Portfolio" />
+  <meta property="og:description" content="Hire Junaid Rana - Full-Stack Software Engineer with 3+ years expertise in React.js, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
   <meta property="og:image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp" />
+  <meta property="og:image:secure_url" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Junaid Rana - Full Stack Developer Portfolio" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:alt" content="Junaid Rana - Full Stack Developer Portfolio Website Preview" />
   <meta property="og:site_name" content="Junaid Rana Portfolio" />
   <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:see_also" content="https://github.com/ranajunaidhashim" />
+  <meta property="og:see_also" content="https://linkedin.com/in/junaidrana-dev" />
+  <meta property="article:author" content="Rana Junaid Hashim" />
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://junaidrana.vercel.app/" />
   <meta name="twitter:title" content="Junaid Rana | Full-Stack Developer & Software Engineer" />
-  <meta name="twitter:description" content="Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
+  <meta name="twitter:description" content="Hire Junaid Rana - Full-Stack Software Engineer with 3+ years expertise in React.js, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
   <meta name="twitter:image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp" />
   <meta name="twitter:image:alt" content="Junaid Rana - Full Stack Developer Portfolio" />
   <meta name="twitter:creator" content="@junaidrana" />
   <meta name="twitter:site" content="@junaidrana" />
+  <meta name="twitter:domain" content="junaidrana.vercel.app" />
+  
+  <!-- LinkedIn Specific -->
+  <meta property="linkedin:owner" content="junaidrana-dev" />
   
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="Junaid Rana | Full-Stack Developer & Software Engineer" />
-  <meta itemprop="description" content="Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
+  <meta itemprop="description" content="Hire Junaid Rana - Full-Stack Software Engineer with 3+ years expertise in React.js, Angular, Node.js, and AWS. Building scalable web applications and enterprise solutions." />
   <meta itemprop="image" content="https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp" />
   
-  <!-- Structured Data - Person Schema -->
+  <!-- Structured Data - Person Schema (Enhanced) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://junaidrana.vercel.app/#person",
     "name": "Rana Junaid Hashim",
-    "alternateName": "Junaid Rana",
+    "givenName": "Junaid",
+    "familyName": "Hashim",
+    "alternateName": ["Junaid Rana", "Junaid Hashim", "Rana Junaid", "ranajunaidhashim"],
     "url": "https://junaidrana.vercel.app",
-    "image": "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp",
+      "width": 1200,
+      "height": 630
+    },
     "jobTitle": "Full-Stack Software Engineer",
     "worksFor": {
       "@type": "Organization",
       "name": "Freelance / Available for hire"
     },
-    "description": "Experienced Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS cloud services.",
+    "description": "Experienced Full-Stack Software Engineer with 3+ years expertise in React.js, Angular, Node.js, and AWS cloud services. Specializing in building scalable web applications, IoT solutions, and enterprise software with focus on motion design, experience design, and accessibility.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Multan",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    },
     "email": "ranajunaidhashim6@gmail.com",
+    "telephone": "+92-300-737-8823",
+    "nationality": "Pakistani",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Bahauddin Zakariya University",
+      "alternateName": "BZU Multan",
+      "url": "https://www.bzu.edu.pk"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "degree",
+      "name": "Master of Computer Science (MCS)"
+    },
     "sameAs": [
       "https://github.com/ranajunaidhashim",
-      "https://linkedin.com/in/ranajunaidhashim",
-      "https://facebook.com/ranajunaidhashim"
+      "https://linkedin.com/in/junaidrana-dev",
+      "https://facebook.com/ranajunaidhashim",
+      "https://wa.me/923007378823"
     ],
     "knowsAbout": [
-      "React.js", "Angular", "Node.js", "AWS", "JavaScript", "TypeScript", 
-      "Full-Stack Development", "Web Development", "Software Engineering",
-      "REST APIs", "GraphQL", "MongoDB", "MySQL", "PostgreSQL"
-    ]
-  }
-  </script>
-  
-  <!-- Structured Data - Website Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Junaid Rana Portfolio",
-    "url": "https://junaidrana.vercel.app",
-    "description": "Portfolio website of Junaid Rana - Full-Stack Software Engineer",
-    "author": {
-      "@type": "Person",
-      "name": "Rana Junaid Hashim"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://junaidrana.vercel.app/#portfolio?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+      "React.js", "Next.js", "Angular", "Node.js", "Express.js", "AWS Lambda", "AWS DynamoDB", 
+      "JavaScript", "TypeScript", "GraphQL", "REST APIs", "MongoDB", "MySQL", "PostgreSQL",
+      "Full-Stack Development", "Web Development", "Software Engineering", "Cloud Computing",
+      "IoT Development", "Serverless Architecture", "CI/CD", "CloudFormation", "UI/UX Design",
+      "Framer Motion", "Tailwind CSS", "Material UI", "Bootstrap", "Responsive Design", "WCAG Accessibility"
+    ],
+    "knowsLanguage": ["English", "Urdu", "Punjabi"],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Software Engineer",
+      "occupationLocation": {
+        "@type": "Country",
+        "name": "Pakistan"
+      },
+      "skills": "React, Angular, Node.js, AWS, TypeScript, GraphQL, MongoDB, MySQL"
     }
   }
   </script>
   
-  <!-- Structured Data - BreadcrumbList -->
+  <!-- Structured Data - Website Schema (Enhanced) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://junaidrana.vercel.app/#website",
+    "name": "Junaid Rana Portfolio",
+    "alternateName": "Rana Junaid Hashim Developer Portfolio",
+    "url": "https://junaidrana.vercel.app",
+    "description": "Official portfolio website of Junaid Rana - Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS",
+    "inLanguage": "en-US",
+    "copyrightYear": "2024",
+    "author": {
+      "@type": "Person",
+      "@id": "https://junaidrana.vercel.app/#person"
+    },
+    "publisher": {
+      "@type": "Person",
+      "@id": "https://junaidrana.vercel.app/#person"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://junaidrana.vercel.app/?search={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Structured Data - Professional Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://junaidrana.vercel.app/#service",
+    "name": "Junaid Rana - Full-Stack Development Services",
+    "description": "Professional web development services including React.js, Angular, Node.js applications, AWS cloud solutions, and UI/UX design",
+    "url": "https://junaidrana.vercel.app",
+    "image": "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp",
+    "telephone": "+92-300-737-8823",
+    "email": "ranajunaidhashim6@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Multan",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.1956,
+      "longitude": 71.4753
+    },
+    "priceRange": "$$",
+    "areaServed": "Worldwide",
+    "serviceType": ["Web Development", "Software Engineering", "Cloud Solutions", "UI/UX Design"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full-Stack Web Development",
+            "description": "Building scalable web applications with React, Angular, Node.js"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AWS Cloud Solutions",
+            "description": "Serverless architectures and cloud-native applications using AWS services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "API Development",
+            "description": "RESTful and GraphQL API design and development"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+  
+  <!-- Structured Data - BreadcrumbList (Enhanced) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://junaidrana.vercel.app" },
-      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://junaidrana.vercel.app/#about" },
-      { "@type": "ListItem", "position": 3, "name": "Experience", "item": "https://junaidrana.vercel.app/#experience" },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://junaidrana.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "About Me", "item": "https://junaidrana.vercel.app/#about" },
+      { "@type": "ListItem", "position": 3, "name": "Work Experience", "item": "https://junaidrana.vercel.app/#experience" },
       { "@type": "ListItem", "position": 4, "name": "Services", "item": "https://junaidrana.vercel.app/#services" },
-      { "@type": "ListItem", "position": 5, "name": "Portfolio", "item": "https://junaidrana.vercel.app/#portfolio" },
-      { "@type": "ListItem", "position": 6, "name": "Contact", "item": "https://junaidrana.vercel.app/#contact" }
+      { "@type": "ListItem", "position": 5, "name": "Portfolio Projects", "item": "https://junaidrana.vercel.app/#portfolio" },
+      { "@type": "ListItem", "position": 6, "name": "Testimonials", "item": "https://junaidrana.vercel.app/#testimonials" },
+      { "@type": "ListItem", "position": 7, "name": "Contact", "item": "https://junaidrana.vercel.app/#contact" }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data - ItemList for Portfolio Projects -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Portfolio Projects by Junaid Rana",
+    "description": "Featured web development projects showcasing full-stack development skills",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "ASSA ABLOY HALO",
+          "description": "Full-stack IoT door-lock control system with Angular UIs, Node.js microservices, and AWS serverless architecture",
+          "url": "https://www.assaabloy.com/",
+          "creator": { "@type": "Person", "@id": "https://junaidrana.vercel.app/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Alumni Management System",
+          "description": "MERN stack web application for connecting alumni through job boards and profiles",
+          "url": "https://github.com/ranajunaidhashim/Alumni-Management-System",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Web Browser"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "WebSite",
+          "name": "FreeSnapScores",
+          "description": "Modern website for professional Snapchat growth services",
+          "url": "https://freesnapscores.com"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data - FAQ Schema for Common Questions -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What technologies does Junaid Rana specialize in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Junaid Rana specializes in React.js, Angular, Node.js, TypeScript, AWS services (Lambda, DynamoDB, CloudFormation), GraphQL, MongoDB, MySQL, and modern UI frameworks like Tailwind CSS and Material UI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Junaid Rana available for freelance projects?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Junaid Rana is available for freelance projects and full-time opportunities. You can contact him via email at ranajunaidhashim6@gmail.com or through the contact form on his portfolio website."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What services does Junaid Rana offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Junaid offers full-stack web development, AWS cloud solutions, backend API development, UI/UX design, responsive web design, and performance optimization services."
+        }
+      }
     ]
   }
   </script>
@@ -146,6 +376,13 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
   
+  <!-- Alternate Language Links -->
+  <link rel="alternate" hreflang="en" href="https://junaidrana.vercel.app/" />
+  <link rel="alternate" hreflang="x-default" href="https://junaidrana.vercel.app/" />
+  
+  <!-- RSS/Atom Feed for Updates (if applicable) -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="Junaid Rana Updates" href="/feed.xml" /> -->
+  
   <!-- Fonts with display swap for performance -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -153,31 +390,83 @@
   <!-- Bootstrap CSS -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" /> -->
   
-  <!-- Google Ads -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2873282382829225" crossorigin="anonymous"></script>
-  
-  <!-- Google Analytics (uncomment in production) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HREKCZ5LW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-5HREKCZ5LW');
-  </script> -->
 </head>
 
 <body>
-  <!-- No JavaScript Fallback -->
+  <!-- No JavaScript Fallback with Full SEO Content -->
   <noscript>
     <div style="padding: 20px; text-align: center; background: #0a0a0f; color: #fff; min-height: 100vh;">
-      <h1>Junaid Rana - Full-Stack Software Engineer</h1>
-      <p>Experienced Full-Stack Developer specializing in React, Angular, Node.js, and AWS.</p>
-      <p>Please enable JavaScript to view the full interactive portfolio experience.</p>
-      <p>Contact: <a href="mailto:ranajunaidhashim6@gmail.com" style="color: #FF075B;">ranajunaidhashim6@gmail.com</a></p>
-      <p>
-        <a href="https://github.com/ranajunaidhashim" style="color: #FF075B;">GitHub</a> | 
-        <a href="https://linkedin.com/in/ranajunaidhashim" style="color: #FF075B;">LinkedIn</a>
-      </p>
+      <header>
+        <h1>Junaid Rana - Full-Stack Software Engineer</h1>
+        <p><strong>React.js | Angular | Node.js | AWS | TypeScript Developer</strong></p>
+      </header>
+      
+      <main>
+        <section>
+          <h2>About Junaid Rana</h2>
+          <p>Experienced Full-Stack Developer with 3+ years specializing in React.js, Angular, Node.js, and AWS cloud services. Building scalable web applications, IoT solutions, and enterprise software with focus on motion design, experience design, and accessibility.</p>
+        </section>
+        
+        <section>
+          <h2>Work Experience</h2>
+          <article>
+            <h3>Full-Stack Software Engineer</h3>
+            <p>3+ years of experience building enterprise web applications with Angular, React, Node.js, and AWS services.</p>
+          </article>
+          <article>
+            <h3>Web Developer at Intelligent Software Solution</h3>
+            <p>July 2023 – October 2023 | Built salon appointment system (Groome) with Angular and Mantine UI.</p>
+          </article>
+          <article>
+            <h3>Frontend Developer Intern at Multan Institute of IT</h3>
+            <p>2022 | Learned web development fundamentals and built responsive websites with HTML, CSS, JavaScript, and React.</p>
+          </article>
+        </section>
+        
+        <section>
+          <h2>Services Offered</h2>
+          <ul>
+            <li>Full-Stack Web Development (React, Angular, Node.js, Next.js)</li>
+            <li>AWS Cloud Solutions (Lambda, DynamoDB, S3, CloudFormation)</li>
+            <li>Backend & API Development (REST, GraphQL, MongoDB, MySQL)</li>
+            <li>UI/UX & Motion Design (Framer Motion, Tailwind, Material UI)</li>
+            <li>Responsive & Accessible Web Design (WCAG, PWA)</li>
+            <li>Performance Optimization (Web Vitals, Lazy Loading, CI/CD)</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Featured Projects</h2>
+          <ul>
+            <li><strong>ASSA ABLOY HALO</strong> - Full-stack IoT door-lock control system</li>
+            <li><strong>Alumni Management System</strong> - MERN stack web application</li>
+            <li><strong>FreeSnapScores</strong> - Next.js website for Snapchat growth services</li>
+            <li><strong>Portfolio Website</strong> - Modern React SPA with animations</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Skills & Technologies</h2>
+          <p>React.js, Next.js, Angular, Node.js, Express.js, TypeScript, JavaScript, AWS Lambda, DynamoDB, GraphQL, REST APIs, MongoDB, MySQL, PostgreSQL, Framer Motion, Tailwind CSS, Material UI, Git, CI/CD, CloudFormation</p>
+        </section>
+        
+        <section>
+          <h2>Contact Information</h2>
+          <p>Email: <a href="mailto:ranajunaidhashim6@gmail.com" style="color: #FF075B;">ranajunaidhashim6@gmail.com</a></p>
+          <p>Phone: <a href="tel:+923007378823" style="color: #FF075B;">+92 300 737 8823</a></p>
+          <p>Location: Multan, Punjab, Pakistan</p>
+        </section>
+      </main>
+      
+      <footer>
+        <p>Connect with Junaid Rana:</p>
+        <p>
+          <a href="https://github.com/ranajunaidhashim" style="color: #FF075B;">GitHub</a> | 
+          <a href="https://linkedin.com/in/junaidrana-dev" style="color: #FF075B;">LinkedIn</a> |
+          <a href="https://wa.me/923007378823" style="color: #FF075B;">WhatsApp</a>
+        </p>
+        <p>© 2024 Junaid Rana. All Rights Reserved.</p>
+      </footer>
     </div>
   </noscript>
   

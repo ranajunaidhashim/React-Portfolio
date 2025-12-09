@@ -1,7 +1,7 @@
 {
   "short_name": "Junaid Rana",
-  "name": "Junaid Rana | Full-Stack Developer Portfolio",
-  "description": "Portfolio of Junaid Rana - Full-Stack Software Engineer specializing in React, Angular, Node.js, and AWS",
+  "name": "Junaid Rana | Full-Stack Developer & Software Engineer Portfolio",
+  "description": "Portfolio of Rana Junaid Hashim - Full-Stack Software Engineer with 3+ years expertise in React.js, Angular, Node.js, TypeScript, and AWS cloud services. Building scalable web applications, IoT solutions, and enterprise software. Available for freelance and full-time opportunities.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -22,14 +22,50 @@
     }
   ],
   "start_url": "/",
+  "id": "/",
   "scope": "/",
   "display": "standalone",
   "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "orientation": "portrait-primary",
-  "theme_color": "#ff6b9d",
-  "background_color": "#ff6b9d",
-  "categories": ["portfolio", "developer", "technology"],
+  "theme_color": "#ff4b88",
+  "background_color": "#0a0a0f",
+  "categories": ["portfolio", "developer", "technology", "business", "productivity"],
   "lang": "en-US",
   "dir": "ltr",
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "About Me",
+      "short_name": "About",
+      "description": "Learn about Junaid Rana's background and skills",
+      "url": "/#about",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Portfolio Projects",
+      "short_name": "Projects",
+      "description": "View Junaid's recent web development projects",
+      "url": "/#portfolio",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch with Junaid Rana",
+      "url": "/#contact",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp",
+      "sizes": "1200x630",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Junaid Rana Portfolio Homepage"
+    }
+  ],
+  "iarc_rating_id": "",
+  "related_applications": [],
+  "handle_links": "preferred"
 }

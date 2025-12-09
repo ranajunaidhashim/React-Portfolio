@@ -1,61 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
         xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-  <!-- Homepage -->
+  <!-- Homepage - Junaid Rana Full-Stack Developer Portfolio -->
   <url>
     <loc>https://junaidrana.vercel.app/</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dsr70k3to/image/upload/v1687766926/Portfolio/ReactPortfolio_m2ieek.webp</image:loc>
+      <image:title>Junaid Rana - Full-Stack Developer Portfolio</image:title>
+      <image:caption>Portfolio website of Junaid Rana - Software Engineer specializing in React, Angular, Node.js, and AWS</image:caption>
+    </image:image>
   </url>
-  
-  <!-- About Section -->
+
+  <!-- About Section - About Junaid Rana -->
   <url>
     <loc>https://junaidrana.vercel.app/#about</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dsr70k3to/image/upload/v1687612965/Portfolio/Rana_Junaid_Hashim.jpg</image:loc>
+      <image:title>Rana Junaid Hashim - Software Engineer Profile Photo</image:title>
+      <image:caption>Professional photo of Junaid Rana, Full-Stack Software Engineer based in Multan, Pakistan</image:caption>
+    </image:image>
   </url>
   
-  <!-- Experience Section -->
+  <!-- Experience Section - Work Experience -->
   <url>
     <loc>https://junaidrana.vercel.app/#experience</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- Services Section -->
+  <!-- Services Section - Development Services -->
   <url>
     <loc>https://junaidrana.vercel.app/#services</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Portfolio Section -->
+  <!-- Portfolio Section - Projects Showcase -->
   <url>
     <loc>https://junaidrana.vercel.app/#portfolio</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dsr70k3to/image/upload/v1712812649/Portfolio/Online_Alumni_Management_System_using_MERN_Stack_with_MySQL_Download_Source_Code_1_tnj1g7.jpg</image:loc>
+      <image:title>Alumni Management System - MERN Stack Project</image:title>
+      <image:caption>Full-stack web application for alumni management built with React, Node.js, and MySQL</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://freesnapscores.com/assets/og-image.png</image:loc>
+      <image:title>FreeSnapScores - Next.js Website</image:title>
+      <image:caption>Modern website built with Next.js and TypeScript</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dsr70k3to/image/upload/v1687764563/Portfolio/solar-innovatio_xe4nsf.webp</image:loc>
+      <image:title>Solar Innovatio - React Website</image:title>
+      <image:caption>Solar energy company website converted from Figma to React</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dsr70k3to/image/upload/v1687766930/Portfolio/react-weather-mode_lgm0ox.webp</image:loc>
+      <image:title>Weather Mode App - React Application</image:title>
+      <image:caption>Real-time weather application built with React and Weather API</image:caption>
+    </image:image>
   </url>
   
-  <!-- Testimonials Section -->
+  <!-- Testimonials Section - Reviews and Feedback -->
   <url>
     <loc>https://junaidrana.vercel.app/#testimonials</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Contact Section -->
+  <!-- Contact Section - Get in Touch -->
   <url>
     <loc>https://junaidrana.vercel.app/#contact</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

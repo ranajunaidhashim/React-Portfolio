@@ -17,13 +17,13 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { to: "Intro", label: "Home" },
-    { to: "about", label: "About" },
-    { to: "experience", label: "Experience" },
-    { to: "services", label: "Services" },
-    { to: "portfolio", label: "Projects" },
-    { to: "testimonials", label: "Testimonials" },
-    { to: "contact", label: "Contact" },
+    { to: "Intro", label: "Home", href: "/#Intro" },
+    { to: "about", label: "About", href: "/#about" },
+    { to: "experience", label: "Experience", href: "/#experience" },
+    { to: "services", label: "Services", href: "/#services" },
+    { to: "portfolio", label: "Projects", href: "/#portfolio" },
+    { to: "testimonials", label: "Testimonials", href: "/#testimonials" },
+    { to: "contact", label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -52,6 +52,7 @@ const Header = () => {
             >
               <Link
                 to={link.to}
+                href={link.href}
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -73,6 +74,7 @@ const Header = () => {
         >
           <Link
             to="contact"
+            href="/#contact"
             spy={true}
             smooth={true}
             offset={-80}
@@ -110,6 +112,7 @@ const Header = () => {
               >
                 <Link
                   to={link.to}
+                  href={link.href}
                   spy={true}
                   smooth={true}
                   offset={-80}

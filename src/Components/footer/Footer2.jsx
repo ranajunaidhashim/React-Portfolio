@@ -37,12 +37,12 @@ const Footer2 = () => {
   ];
 
   const quickLinks = [
-    { to: "Intro", label: "Home" },
-    { to: "about", label: "About" },
-    { to: "experience", label: "Experience" },
-    { to: "services", label: "Services" },
-    { to: "portfolio", label: "Portfolio" },
-    { to: "contact", label: "Contact" },
+    { to: "Intro", label: "Home", href: "/#Intro" },
+    { to: "about", label: "About", href: "/#about" },
+    { to: "experience", label: "Experience", href: "/#experience" },
+    { to: "services", label: "Services", href: "/#services" },
+    { to: "portfolio", label: "Portfolio", href: "/#portfolio" },
+    { to: "contact", label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -97,6 +97,7 @@ const Footer2 = () => {
                 <Link
                   key={index}
                   to={link.to}
+                  href={link.href}
                   spy={true}
                   smooth={true}
                   offset={-80}
@@ -143,11 +144,13 @@ const Footer2 = () => {
 
           <Link
             to="Intro"
+            href="/#Intro"
             spy={true}
             smooth={true}
             offset={-80}
             duration={0}
             className="back-to-top"
+            aria-label="Back to top"
           >
             <RiArrowUpLine />
           </Link>

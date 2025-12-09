@@ -112,7 +112,7 @@ const Intro = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
         >
-          <Link to="contact" spy={true} smooth={true} duration={0}>
+          <Link to="contact" href="/#contact" spy={true} smooth={true} duration={0}>
             <span>Let's Talk</span>
           </Link>
           <a 
