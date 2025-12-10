@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   background: #ffffff;
   color: #0f172a;
   line-height: 1.6;
@@ -194,6 +194,10 @@ section {
 @media screen and (max-width: 768px) {
   html {
     scroll-padding-top: 70px;
+  }
+  
+  body {
+    font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
   }
 }
 

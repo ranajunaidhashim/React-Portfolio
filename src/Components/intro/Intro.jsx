@@ -51,14 +51,14 @@ const Intro = () => {
             >
               Rana Junaid
             </motion.span>
-            &nbsp;
+            &nbsp;&nbsp;
             <motion.span
               style={{ flexDirections: "row" }}
               whileInView={{ y: [-100, 0, 0], opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={transition}
             >
-              Hashim
+            Hashim
             </motion.span>
           </div>
           <motion.span
