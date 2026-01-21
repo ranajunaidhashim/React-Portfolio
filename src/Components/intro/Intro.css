@@ -131,7 +131,7 @@
   line-height: 1.1;
 }
 
-.i-name > :nth-child(2) > *:last-child {
+.i-name > :nth-child(2) > .pink-text {
   background: linear-gradient(135deg, #ff075b, #ff6b9d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
