@@ -44,16 +44,25 @@ const Intro = () => {
           </motion.span>
           <div className="iiflex">
             <motion.span
-              style={{ flexDirections: "row" }}
+              style={{ flexDirection: "row" }}
               initial={{ opacity: 0 }}
               whileInView={{ x: [-100, 0, 0], opacity: 1 }}
               transition={transition}
             >
-              Rana Junaid
+              Rana&nbsp;
+            </motion.span>
+            <motion.span
+              className="pink-text"
+              style={{ flexDirection: "row" }}
+              initial={{ opacity: 0 }}
+              whileInView={{ x: [-100, 0, 0], opacity: 1 }}
+              transition={transition}
+            >
+              Junaid
             </motion.span>
             &nbsp;&nbsp;
             <motion.span
-              style={{ flexDirections: "row" }}
+              style={{ flexDirection: "row" }}
               whileInView={{ y: [-100, 0, 0], opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={transition}
